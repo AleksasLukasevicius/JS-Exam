@@ -1,3 +1,3 @@
-function multiplication(a, b) {
+export function multiplicationOperator(a, b) {
   return a * b;
 }
