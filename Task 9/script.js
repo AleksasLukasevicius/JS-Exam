@@ -19,7 +19,7 @@ function Movie(title, director, budget) {
         : alert(`false, ${favoriteMovieTitle} movie budget less than 100 000 000 mln USD $`);
 };
 
-const moreThanMovieBudget = 100_000_000;
+const comparisonMovieBudget = 100_000_000;
 
 const favoriteMovieTitle = prompt("Your favorite movie title", "Avatar");
 const favoriteMovieDirector = prompt("Your favorite movie director", "James Cameron");
