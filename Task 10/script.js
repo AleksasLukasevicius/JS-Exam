@@ -11,9 +11,9 @@ Sutvarkykite užduoties "Task 10" esančius failus taip, kad veiktų žemiau pat
 let sumResult = compositionOperator(one, four);
 let divisionResult = divisionOperator(four, two);
 let substractResult = substractionOperator(three, two);
-let multipliResult = multiplicationOperator(five, two);
+let multiplyResult = multiplicationOperator(five, two);
 
-console.log(`Composition ${one} + ${four} = ${sumResult}`);
-console.log(`Division ${four} / ${two} = ${divisionResult}`);
-console.log(`Substraction ${three} - ${two} = ${substractResult}`);
-console.log(`Multiplication ${five} * ${two} = ${multipliResult}`);
+console.log(`Composition: ${one} + ${four} = ${sumResult}`);
+console.log(`Division: ${four} / ${two} = ${divisionResult}`);
+console.log(`Substraction: ${three} - ${two} = ${substractResult}`);
+console.log(`Multiplication: ${five} * ${two} = ${multiplyResult}`);
