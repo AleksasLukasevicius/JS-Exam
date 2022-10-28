@@ -4,17 +4,16 @@ import { multiplicationOperator } from "./modules/math/multiplication.js";
 import { substractionOperator } from "./modules/math/subtraction.js";
 import { one, two, three, four, five } from "./modules/numbers/numbers.js";
 
-
 /* ------------------------------ TASK 10 ---------------------------------------------------
 Sutvarkykite užduoties "Task 10" esančius failus taip, kad veiktų žemiau pateiktos funkcijos.
 -------------------------------------------------------------------------------------------- */
 
-let a = compositionOperator(one, four);
-let b = divisionOperator(four, two);
-let c = substractionOperator(three, two);
-let d = multiplicationOperator(five, two);
+let sumResult = compositionOperator(one, four);
+let divisionResult = divisionOperator(four, two);
+let substractResult = substractionOperator(three, two);
+let multipliResult = multiplicationOperator(five, two);
 
-console.log(a);
-console.log(b);
-console.log(c);
-console.log(d);
+console.log(`Composition ${one} + ${four} = ${sumResult}`);
+console.log(`Division ${four} / ${two} = ${divisionResult}`);
+console.log(`Substraction ${three} - ${two} = ${substractResult}`);
+console.log(`Multiplication ${five} * ${two} = ${multipliResult}`);
