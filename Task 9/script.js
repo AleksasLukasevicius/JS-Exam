@@ -14,12 +14,12 @@ function Movie(title, director, budget) {
     this.title = title;
     this.director = director;
     this.budget = budget;
-    this.isBudgetWasExpensive = favoriteMovieBudget > moreThanMovieBudget
+    this.isBudgetWasExpensive = favoriteMovieBudget > comparedMovieBudget
         ? alert(`true, ${favoriteMovieTitle} movie budget more than 100 000 000 mln USD $`)
         : alert(`false, ${favoriteMovieTitle} movie budget less than 100 000 000 mln USD $`);
 };
 
-const comparisonMovieBudget = 100_000_000;
+const comparedMovieBudget = 100_000_000;
 
 const favoriteMovieTitle = prompt("Your favorite movie title", "Avatar");
 const favoriteMovieDirector = prompt("Your favorite movie director", "James Cameron");
