@@ -6,27 +6,52 @@ multiplication(a, b) - priima du skaičius ir grąžina jų daugybos rezultatą;
 division(a, b) - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
 
-function calculator(firstNumber, secondNumber, operator) {
-    operator = prompt("Koks veiksmas: sum, subtraction, multiplication, division?", "sum")
-    firstNumber = +prompt("Enter first number", 2);
-    secondNumber = +prompt("Enter second number", 2);
+const firstNumber = Math.random() * 10;
+const secondNumber = Math.random() * 5;
 
-    if (operator === "sum") {
-        return firstNumber + secondNumber;
+const calculator = () => {
 
-    } else if (operator === "subtraction") {
-        return firstNumber - secondNumber;
+    sum = (firstNumber + secondNumber).toFixed(2);
 
-    } else if (operator === "multiplication") {
-        return firstNumber * secondNumber;
+    subtraction = (firstNumber - secondNumber).toFixed(2);
 
-    } else if (operator === "division") {
-        return firstNumber / secondNumber;
+    multiplication = (firstNumber * secondNumber).toFixed(2);
 
-    } else { }
-}
+    division = (firstNumber / secondNumber).toFixed(2);
 
-alert(calculator("", "", "operator"));
+    return {
+        sum,
+        subtraction,
+        multiplication,
+        division,
+    };
+};
+
+console.info(calculator(firstNumber, secondNumber));
+
+
+
+// function calculator(firstNumber, secondNumber, operator) {
+//     operator = prompt("Koks veiksmas: sum, subtraction, multiplication, division?", "sum")
+//     firstNumber = Math.random() * 10;
+//     secondNumber = Math.random() * 5;
+
+//     if (operator === "sum") {
+//         return firstNumber + secondNumber;
+
+//     } else if (operator === "subtraction") {
+//         return firstNumber - secondNumber;
+
+//     } else if (operator === "multiplication") {
+//         return firstNumber * secondNumber;
+
+//     } else if (operator === "division") {
+//         return firstNumber / secondNumber;
+
+//     } else { }
+// }
+
+// alert(calculator("", "", "operator"));
 
 
 
