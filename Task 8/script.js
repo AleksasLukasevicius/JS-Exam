@@ -33,8 +33,8 @@ console.info(calculator(firstNumber, secondNumber));
 
 // function calculator(firstNumber, secondNumber, operator) {
 //     operator = prompt("Koks veiksmas: sum, subtraction, multiplication, division?", "sum")
-//     firstNumber = Math.random() * 10;
-//     secondNumber = Math.random() * 5;
+//     firstNumber = +prompt("Enter first number", 2);
+//     secondNumber = +prompt("Enter second number", 2);
 
 //     if (operator === "sum") {
 //         return firstNumber + secondNumber;
