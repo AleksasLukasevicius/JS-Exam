@@ -13,7 +13,7 @@ let divisionResult = divisionOperator(four, two);
 let substractResult = substractionOperator(three, two);
 let multiplyResult = multiplicationOperator(five, two);
 
-console.log(`Composition: ${one} + ${four} = ${sumResult}`);
-console.log(`Division: ${four} / ${two} = ${divisionResult}`);
-console.log(`Substraction: ${three} - ${two} = ${substractResult}`);
-console.log(`Multiplication: ${five} * ${two} = ${multiplyResult}`);
+console.info(`Composition: ${one} + ${four} = ${sumResult}`);
+console.info(`Division: ${four} / ${two} = ${divisionResult}`);
+console.info(`Substraction: ${three} - ${two} = ${substractResult}`);
+console.info(`Multiplication: ${five} * ${two} = ${multiplyResult}`);
