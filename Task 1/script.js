@@ -8,3 +8,33 @@ pamatyti jo pateikto svorio kovertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+
+document.querySelector('form').addEventListener('submit', convertKgToPoundsGramsOunces)
+
+function convertKgToPoundsGramsOunces(event) {
+    event.preventDefault();
+
+    const kilogramsInputValue = document.getElementById('search').value;
+
+    const poundsOutputElement = document.querySelector('#output :nth-child(1) h3');
+    const gramsOutputElement = document.querySelector('#output :nth-child(2) h3');
+    const ouncesOutputElement = document.querySelector('#output :nth-child(3) h3');
+
+    if (kilogramsInputValue) {
+        const kilograms = Number(kilogramsInputValue);
+
+        const pounds = (kilograms / 2.2046).toFixed(4);
+        const grams = (kilograms / 0.001);
+        const ounces = (kilograms * 35.274).toFixed(2);
+
+        poundsOutputElement.innerText = `Pounds: ${pounds} (lb)`;
+        gramsOutputElement.innerText = `Grams: ${grams} (g)`;
+        ouncesOutputElement.innerText = `Ounces: ${ounces} (lb)`;
+
+    } else {
+        poundsOutputElement.innerText = '';
+        gramsOutputElement.innerText = '';
+        ouncesOutputElement.innerText = '';
+    };
+
+};
