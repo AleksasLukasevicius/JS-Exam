@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -17,13 +17,13 @@
   background-color: #f1f1f1;
 }
 
-.btn {
+.button {
   width: 300px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-#btn__element {
+#button-element {
   width: 75%;
   padding: 15px 25px;
   background-color: #222;
@@ -34,12 +34,12 @@
   text-align: center;
 }
 
-#btn__element:hover {
+#button-element:hover {
   cursor: pointer;
   background-color: rgb(59, 59, 59);
 }
 
-#btn__state {
+#button-state {
   width: 25%;
   padding: 15px 25px;
   background-color: rgb(59, 59, 59);
