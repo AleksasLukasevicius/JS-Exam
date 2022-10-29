@@ -19,6 +19,7 @@ const getUsers = async () => {
         const users = await response.json();
 
         return users;
+
     } catch (error) {
         console.error(error);
     }
