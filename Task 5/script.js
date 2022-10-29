@@ -29,7 +29,6 @@ const userHasDog = filterDogOwers();
 console.info(userHasDog);
 
 
-
 function filterAdults() {
   return users.filter(user => user.age >= 18);
 }
