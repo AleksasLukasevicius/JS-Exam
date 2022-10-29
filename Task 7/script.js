@@ -13,4 +13,4 @@ const audi = {
 
 const showObjectKeys = Object.keys(audi);
 
-console.info([showObjectKeys]);
+console.info(`Object audi keys: ${showObjectKeys}`);
