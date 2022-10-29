@@ -18,8 +18,6 @@ const getUsers = async () => {
         const response = await fetch(ENDPOINT);
         const users = await response.json();
 
-        console.info({ users })
-
         return users;
     } catch (error) {
         console.error(error);
