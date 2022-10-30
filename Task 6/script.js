@@ -27,7 +27,7 @@ function getUsersAverageAge(users) {
 
 const userAverageAge = getUsersAverageAge(users).toFixed(2);
 
-console.info(`Users average age is ${userAverageAge}`);
+console.info(`Users average age is ${userAverageAge} years`);
 
 
 function getUsersNames(users) {
