@@ -16,9 +16,9 @@ function convertKgToPoundsGramsOunces(event) {
 
     const kilogramsInputValue = document.getElementById('search').value;
 
-    const poundsOutputElement = document.querySelector('#output :nth-child(1) h3');
-    const gramsOutputElement = document.querySelector('#output :nth-child(2) h3');
-    const ouncesOutputElement = document.querySelector('#output :nth-child(3) h3');
+    const poundsOutputElement = document.querySelector('#output :nth-child(1) span');
+    const gramsOutputElement = document.querySelector('#output :nth-child(2) span');
+    const ouncesOutputElement = document.querySelector('#output :nth-child(3) span');
 
     if (kilogramsInputValue) {
         const kilograms = Number(kilogramsInputValue);
@@ -27,9 +27,9 @@ function convertKgToPoundsGramsOunces(event) {
         const grams = (kilograms / 0.001);
         const ounces = (kilograms * 35.274).toFixed(2);
 
-        poundsOutputElement.innerText = `Pounds: ${pounds} (lb)`;
-        gramsOutputElement.innerText = `Grams: ${grams} (g)`;
-        ouncesOutputElement.innerText = `Ounces: ${ounces} (lb)`;
+        poundsOutputElement.innerText = pounds;
+        gramsOutputElement.innerText = grams;
+        ouncesOutputElement.innerText = ounces;
 
     } else {
         poundsOutputElement.innerText = '';

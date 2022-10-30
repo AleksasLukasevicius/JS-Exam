@@ -41,7 +41,7 @@ form {
 }
 
 #output > div {
-  width: 30%;
+  width: 32%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +49,10 @@ form {
   margin: 0 auto;
   height: 5rem;
   background-color: #f7f7f7;
+}
+
+span {
+  font-size: 1.5rem;
 }
 
 #search {
