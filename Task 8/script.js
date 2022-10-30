@@ -31,6 +31,7 @@ function Calculator() {
 }
 
 let calculator = new Calculator();
+
 calculator.getNumbers();
 
 console.info(`Sum = ${calculator.getSum()}`);
