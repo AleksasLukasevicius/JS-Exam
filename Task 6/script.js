@@ -25,9 +25,10 @@ function getUsersAverageAge(users) {
     previousUserAge + currentUserAge.age, 0) / users.length;
 };
 
-const userAveregeAge = getUsersAverageAge(users).toFixed(2);
+const userAverageAge = getUsersAverageAge(users).toFixed(2);
 
-console.info(userAveregeAge);
+console.info(`Users average age is ${userAverageAge}`);
+
 
 function getUsersNames(users) {
   return users.map(user => user.name);
@@ -35,4 +36,4 @@ function getUsersNames(users) {
 
 const usersFullNames = JSON.stringify(getUsersNames(users));
 
-console.info(usersFullNames);
+console.info(`Users names ${usersFullNames}`);
