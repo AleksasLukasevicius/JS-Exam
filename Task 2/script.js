@@ -8,6 +8,8 @@ let counter = 0;
 function showTimesButtonPressed() {
     counter++;
 
-    document.querySelector("#button-state").innerText = counter;
+    const buttonState = document.querySelector("#button-state")
+
+    buttonState.innerText = counter;
 }
 document.querySelector("#button-element").addEventListener("click", showTimesButtonPressed);
