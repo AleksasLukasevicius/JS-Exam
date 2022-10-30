@@ -1,6 +1,6 @@
-import { showUsers } from "./modules/showUsers.js";
+import { showUsers } from "./showUsers.js";
 
-const ENDPOINT = 'https://api.github.com/users';
+const ENDPOINT = "https://api.github.com/users";
 
 const getUsers = async () => {
     try {
@@ -8,8 +8,6 @@ const getUsers = async () => {
         const users = await response.json();
 
         showUsers(users);
-
-        return users;
 
     } catch (error) {
         console.error(error);

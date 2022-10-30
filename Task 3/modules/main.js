@@ -1,3 +1,5 @@
+import { getUsers } from "./getUsers.js";
+
 /* ------------------------------ TASK 3 -----------------------------------
 Parašykite JS kodą, kuris leis vartotojui paspaudus ant mygtuko "Show users"
 pamatyti vartotojus iš Github API (endpoint'as pateiktas žemiau).
@@ -11,13 +13,13 @@ Pastaba: Sukurta kortelė, kurioje yra pateikiama vartotojo informacija, turi
 turėti bent minimalų stilių ir būti responsive;
 -------------------------------------------------------------------------- */
 
-import { getUsers } from "./modules/getUsers.js";
-
 const handleFormSubmit = async (event) => {
     event.preventDefault();
 
-    document.querySelector("p").style.visibility = "hidden";
+    document.querySelector("#button").style.display = "none";
+    document.querySelector("#message").style.display = "none";
 
     await getUsers();
 };
+
 document.querySelector("#button").addEventListener("click", handleFormSubmit);
