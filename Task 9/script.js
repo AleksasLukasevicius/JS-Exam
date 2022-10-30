@@ -11,15 +11,16 @@ wasExpensive() - jeigu filmo "budget" yra daugiau nei 100 000 000 mln USD, tada 
 ------------------------------------------------------------------------------------------------------ */
 
 function Movie(title, director, budget) {
+    const comparedMovieBudget = 100_000_000;
+
     this.title = title;
     this.director = director;
     this.budget = budget;
     this.isBudgetWasExpensive = favoriteMovieBudget > comparedMovieBudget
-        ? alert(`true, ${favoriteMovieTitle} movie budget more than 100 000 000 mln USD $`)
-        : alert(`false, ${favoriteMovieTitle} movie budget less than 100 000 000 mln USD $`);
+        ? alert(`true, ${favoriteMovieTitle} movie budget more than ${comparedMovieBudget} mln USD $`)
+        : alert(`false, ${favoriteMovieTitle} movie budget less than ${comparedMovieBudget} mln USD $`);
 };
 
-const comparedMovieBudget = 100_000_000;
 
 const favoriteMovieTitle = prompt("Your favorite movie title", "Avatar");
 const favoriteMovieDirector = prompt("Your favorite movie director", "James Cameron");
