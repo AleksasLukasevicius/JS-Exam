@@ -12,4 +12,5 @@ const showUsers = (users) => {
         usersContainerElement.append(usersContainer);
     });
 };
+
 export { showUsers };

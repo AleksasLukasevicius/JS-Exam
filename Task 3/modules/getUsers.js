@@ -1,4 +1,4 @@
-import { showUsers } from "./showUsers.js./";
+import { showUsers } from "./modules/showUsers.js";
 
 const ENDPOINT = 'https://api.github.com/users';
 
