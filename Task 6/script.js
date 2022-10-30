@@ -20,19 +20,19 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
 
-
-function getUserAverageAge(users) {
+function getUsersAverageAge(users) {
   return users.reduce((previousUserAge, currentUserAge) =>
     previousUserAge + currentUserAge.age, 0) / users.length;
 };
 
-console.info(getUserAverageAge(users));
+const userAveregeAge = getUsersAverageAge(users).toFixed(2);
 
+console.info(userAveregeAge);
 
 function getUsersNames(users) {
   return users.map(user => user.name);
 };
 
-console.info(getUsersNames(users));
+const usersFullNames = JSON.stringify(getUsersNames(users));
 
-
+console.info(usersFullNames);
