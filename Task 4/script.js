@@ -33,8 +33,8 @@ const createCars = (cars) => {
         const carBrandElement = document.createElement("h3");
         const carModelListElement = document.createElement("ul");
 
-        const models = car.models;
         carBrandElement.innerText = car.brand;
+        const models = car.models;
 
         models.forEach((model) => {
             const carModelElement = document.createElement("li");
