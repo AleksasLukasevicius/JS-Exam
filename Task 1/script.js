@@ -21,7 +21,7 @@ function convertKgToPoundsGramsOunces(event) {
     const ouncesOutputElement = document.querySelector('#output :nth-child(3) span');
 
     if (kilogramsInputValue) {
-        const kilograms = kilogramsInputValue;
+        const kilograms = +kilogramsInputValue;
 
         const pounds = (kilograms / 2.2046).toFixed(4);
         const grams = (kilograms / 0.001);
