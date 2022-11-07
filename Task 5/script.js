@@ -20,11 +20,11 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
 
-function filterDogOwers() {
-  return users.filter(user => user.hasDog !== false);
+function filterDogOwners() {
+  return users.filter(user => user.hasDog === true);
 }
 
-const userHasDog = filterDogOwers();
+const userHasDog = filterDogOwners();
 
 console.info(userHasDog);
 
